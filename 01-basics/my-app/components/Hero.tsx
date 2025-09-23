@@ -32,6 +32,29 @@ export const Hero = () => {
         Automated bookkeeping, effortless tax filing, real‑time insights. Set up
         in 10 mins. Back to building by 3:24pm.
       </p>
+
+      <div className="hero-cta">
+        <button className="btn">Start free trial</button>
+        <button className="btn">
+          Pricing{" "}
+          <svg
+            viewBox="0 0 16 16"
+            width="20"
+            height="20"
+            fill="none"
+            className="badge-icon"
+          >
+            <path
+              stroke="#1e1f25"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeOpacity="0.5"
+              strokeWidth="1"
+              d="M8 4.75 11.25 8m0 0L8 11.25M11.25 8h-6.5"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </div>
   );
 };
