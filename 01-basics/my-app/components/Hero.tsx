@@ -8,8 +8,8 @@ export const Hero = () => {
 
         <svg
           viewBox="0 0 16 16"
-          width="30"
-          height="30"
+          width="20"
+          height="20"
           fill="none"
           className="badge-icon"
         >
@@ -23,6 +23,8 @@ export const Hero = () => {
           ></path>
         </svg>
       </div>
+
+      <h1 className="hero-title">Magically simplify accounting and taxes</h1>
     </div>
   );
 };
