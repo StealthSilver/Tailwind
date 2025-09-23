@@ -17,3 +17,5 @@ CURRICULAM
 
 BASICS OF CSS
 
+replicating the landing page of finta
+https://www.finta.com/
