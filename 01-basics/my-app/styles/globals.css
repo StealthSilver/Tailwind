@@ -12,6 +12,9 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  /* to create the vertical line on the sides */
+  position: relative;
 }
 
 /* making the height as full page and applying linear gradient */
@@ -165,4 +168,22 @@
 .btn-secondary:hover {
   background-color: #eeeeee;
   transition: all 0.3s ease-out;
+}
+
+.left-line {
+  height: 200%;
+  width: 0.5px;
+  background-color: rgb(200, 200, 200);
+  position: absolute;
+  left: -10px;
+  opacity: 0.5;
+}
+
+.right-line {
+  height: 200%;
+  width: 0.5px;
+  background-color: rgb(200, 200, 200);
+  position: absolute;
+  right: -10px;
+  opacity: 0.5;
 }
