@@ -90,3 +90,8 @@
   align-items: center;
   gap: 10px;
 }
+
+.badge:hover {
+  background-color: #e3e3e3;
+  transition: all 0.2 ease-out;
+}
