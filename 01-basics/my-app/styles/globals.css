@@ -24,7 +24,7 @@
 .navbar-root {
   display: flex;
   justify-content: space-between;
-  /* aligning the flex components to the center */
+  /* aligning the flex items to the center vertically */
   align-items: center;
   padding: 16px 0px;
 }

@@ -20,7 +20,7 @@ export const Navbar = () => {
 
   return (
     <div className="navbar-root">
-      <div className="logo">Finance</div>
+      <div className="logo">Finnance</div>
       <div>
         {links.map((link) => (
           <a key={link.title} href={link.href}>
