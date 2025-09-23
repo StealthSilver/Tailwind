@@ -1,0 +1,18 @@
+CURRICULAM 
+
+1. Basics of CSS
+2. Basics of Tailwind
+3. Responsive design funcdamentals
+4. Theming and Variables
+5. Arbritary Values
+6. CSS properties
+7. Animations with Tailwind CSS 
+8. SVG animations 
+9. Best Practices 
+10. Recreating cool websites with tailwind and motion
+11. Final Project
+12. Inspirations 
+
+-----------------------------------------------------------------------------------------
+
+BASICS OF CSS
