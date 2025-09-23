@@ -36,12 +36,28 @@
 
 .links {
   display: flex;
+  align-items: center;
   /* gap between flex items */
-  gap: 16px;
+  gap: 24px;
 }
 
 .link-items {
   font-size: 16px;
   text-decoration: none;
-  color: #434343;
+  color: #474747;
+}
+
+.link-items:hover {
+  color: black;
+  transition: color 0.2s ease-out;
+}
+
+.btn {
+  font-size: 16px;
+  /* remove all the default styles from button */
+  all: unset;
+  padding: 8px 12px;
+  background-color: #2679f3;
+  color: white;
+  border-radius: 8px;
 }

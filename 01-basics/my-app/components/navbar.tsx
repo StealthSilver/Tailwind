@@ -27,6 +27,7 @@ export const Navbar = () => {
             {link.title}
           </a>
         ))}
+        <button className="btn">Start free trial</button>
       </div>
     </div>
   );
