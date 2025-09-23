@@ -21,9 +21,9 @@ export const Navbar = () => {
   return (
     <div className="navbar-root">
       <div className="logo">Finnance</div>
-      <div>
+      <div className="links">
         {links.map((link) => (
-          <a key={link.title} href={link.href}>
+          <a className="link-items" key={link.title} href={link.href}>
             {link.title}
           </a>
         ))}
