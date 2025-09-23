@@ -176,7 +176,7 @@
   background-color: rgb(200, 200, 200);
   position: absolute;
   left: -20px;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .right-line {
@@ -185,7 +185,7 @@
   background-color: rgb(200, 200, 200);
   position: absolute;
   right: -20px;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .hero-image-container {
@@ -211,5 +211,5 @@
   background-color: rgb(200, 200, 200);
   position: absolute;
   top: -20px;
-  opacity: 0.5;
+  opacity: 0.3;
 }
