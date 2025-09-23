@@ -34,8 +34,8 @@ export const Hero = () => {
       </p>
 
       <div className="hero-cta">
-        <button className="btn">Start free trial</button>
-        <button className="btn">
+        <button className="btn-primary">Start free trial</button>
+        <button className="btn-secondary">
           Pricing{" "}
           <svg
             viewBox="0 0 16 16"
