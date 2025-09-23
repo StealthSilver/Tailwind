@@ -1,6 +1,9 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Container } from "@/components/container";
 
 export default function Home() {
-  return <div>Hello World</div>;
+  return (
+    <div className="layout">
+      <Container>Hello World</Container>
+    </div>
+  );
 }
