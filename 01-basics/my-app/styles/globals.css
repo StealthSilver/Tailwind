@@ -12,11 +12,22 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: red;
 }
 
 /* making the height as full page and applying linear gradient */
 .layout {
   height: 100vh;
   background-image: linear-gradient(to bottom, white, #dbeafe, white);
+}
+
+/* styling the navbar */
+.navbar-root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
+}
+
+.logo {
+  font-size: 30px;
 }
