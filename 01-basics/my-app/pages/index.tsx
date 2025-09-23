@@ -12,6 +12,7 @@ export default function Home() {
         <Hero></Hero>
       </Container>
       <div className="hero-image-container">
+        <div className="horizontal-line"></div>
         <img src="/hero-ui-v5.webp" alt="" className="hero-image" />
       </div>
     </div>
