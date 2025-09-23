@@ -11,6 +11,9 @@ export default function Home() {
         <Navbar></Navbar>
         <Hero></Hero>
       </Container>
+      <div className="hero-image-container">
+        <img src="/hero-ui-v5.webp" alt="" className="hero-image" />
+      </div>
     </div>
   );
 }
