@@ -14,6 +14,12 @@ export default function Home() {
         <Navbar></Navbar>
         <Hero></Hero>
       </Container>
+
+      {/* horizontail line */}
+
+      <div className="relativ w-full">
+        <div className="h-px w-full absolute inset-x-0 bg-gradient-to-b from-neutral-300/50 via-neutral-200 to-transparent pointer-events-none"></div>
+      </div>
     </div>
   );
 }
