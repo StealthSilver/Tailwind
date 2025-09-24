@@ -8,7 +8,7 @@ export const Navbar = () => {
       href: "/founders",
       title: "Founders",
     },
-    ,
+
     {
       href: "/guide",
       title: "Guide",
@@ -36,6 +36,14 @@ export const Navbar = () => {
           alt="logo"
         />
       </Link>
+      <div className="flex items-center gap-4">
+        {" "}
+        {links.map((link, index) => (
+          <Link href={link.href} key={index}>
+            {link.title}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
