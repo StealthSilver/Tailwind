@@ -1,6 +1,7 @@
 import { Container } from "@/app/components/Container";
 import { Navbar } from "@/app/components/Navbar";
 import { Hero } from "./components/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,6 +20,16 @@ export default function Home() {
 
       <div className="relativ w-full">
         <div className="h-px w-full absolute inset-x-0 bg-gradient-to-b from-neutral-300/50 via-neutral-200 to-transparent pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto">
+          <Image
+            src="/banner.webp"
+            alt="banner"
+            width={1000}
+            height={1000}
+            className="rounded-2xl w-full object-cover object-left-top"
+          />
+        </div>
       </div>
     </div>
   );
