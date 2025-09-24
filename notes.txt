@@ -26,3 +26,45 @@ https://www.finta.com/
 
 replicating the landing page of finta with tailwind
 https://www.finta.com/
+
+create a lib/utils.ts and add
+
+clsx
+A small library that lets you combine class names conditionally.
+
+Example:
+clsx("p-4", false && "bg-red-500", true && "text-white");
+// => "p-4 text-white"
+
+tailwind-merge (twMerge)
+
+Tailwind has conflicting utility classes (like p-2 vs p-4 or bg-red-500 vs bg-blue-500).
+Normally, if you just concatenate them, all remain, and the browser applies the last one.
+twMerge automatically resolves conflicts by keeping only the last valid class in each category.
+
+Example:
+
+twMerge("p-2 p-4"); 
+// => "p-4"
+
+
+The cn function
+Combines both:
+clsx handles conditional logic.
+twMerge cleans up and resolves Tailwind conflicts.
+
+Example usage:
+
+cn(
+  "p-2 bg-red-500",
+  isActive && "bg-blue-500", 
+  className
+)
+
+
+If isActive is true and className="mt-4", the result will be:
+
+"p-2 bg-blue-500 mt-4"
+
+
+(Notice how bg-red-500 got overridden by bg-blue-500).
