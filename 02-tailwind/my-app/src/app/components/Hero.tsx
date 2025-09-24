@@ -17,9 +17,13 @@ export const Hero = () => {
         </p>
       </div>
 
-      <div className="flex items-center gap-8 relative mt-20 realtive z-10">
+      <div className="flex items-center gap-8 relative mt-10 realtive z-10">
         <button className="bg-[#2579F4] px-4 py-3 text-white font-bold rounded-lg shadow-lg text-shadow-sm tracking-wide cursor-pointer hover:bg-[#253df4] transition duration-200">
           Get Started
+        </button>
+
+        <button className="px-4 py-3 text-black font-bold rounded-lg tracking-wide cursor-pointer hover:bg-[#cbd8e2] transition duration-200">
+          Pricing &rarr;
         </button>
       </div>
     </div>
