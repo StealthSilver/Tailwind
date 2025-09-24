@@ -41,13 +41,13 @@ export const Navbar = () => {
           <Link
             href={link.href}
             key={index}
-            className="text-neutral-800 text-lg font-medium hover:text-neutral-500 transition duration-200"
+            className="text-neutral-800 text-lg font-medium hover:text-neutral-500 transition duration-200 cursor-pointer"
           >
             {link.title}
           </Link>
         ))}
         {/* Anything in the square braces in the tailwind classes are arbritary values */}
-        <button className="bg-[#2579F4] px-4 py-3 text-white font-bold rounded-lg shadow-lg text-shadow-sm hover:bg-[#253df4] transition duration-200">
+        <button className="bg-[#2579F4] px-4 py-3 text-white font-bold rounded-lg shadow-lg text-shadow-sm hover:bg-[#253df4] transition duration-200 cursor-pointer">
           Get Started
         </button>
       </div>
