@@ -46,6 +46,10 @@ export const Navbar = () => {
             {link.title}
           </Link>
         ))}
+        {/* Anything in the square braces in the tailwind classes are arbritary values */}
+        <button className="bg-[#2579F4] px-4 py-3 text-white font-bold rounded-lg shadow-lg text-shadow-sm hover:bg-[#253df4] transition duration-200">
+          Get Started
+        </button>
       </div>
     </div>
   );
