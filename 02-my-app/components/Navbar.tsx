@@ -3,6 +3,27 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const Navbar = () => {
+  const links = [
+    {
+      href: "/founders",
+      title: "Founders",
+    },
+    ,
+    {
+      href: "/guide",
+      title: "Guide",
+    },
+    {
+      href: "/pricing",
+      title: "Pricing",
+    },
+
+    {
+      href: "/login",
+      title: "Login",
+    },
+  ];
+
   return (
     <div className="flex items-center justify-between ">
       <Link href="/">
