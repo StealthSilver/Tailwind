@@ -36,10 +36,13 @@ export const Navbar = () => {
           alt="logo"
         />
       </Link>
-      <div className="flex items-center gap-4">
-        {" "}
+      <div className="flex items-center gap-8">
         {links.map((link, index) => (
-          <Link href={link.href} key={index}>
+          <Link
+            href={link.href}
+            key={index}
+            className="text-neutral-800 text-lg font-medium hover:text-neutral-500 transition duration-200"
+          >
             {link.title}
           </Link>
         ))}
