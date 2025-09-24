@@ -15,7 +15,12 @@ CURRICULAM
 
 -----------------------------------------------------------------------------------------
 
-BASICS OF CSS
+01 - BASICS OF CSS
 
 replicating the landing page of finta
 https://www.finta.com/
+
+-----------------------------------------------------------------------------------------
+
+02 - BASICS OF TAILWIND 
+
