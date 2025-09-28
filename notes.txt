@@ -68,3 +68,7 @@ If isActive is true and className="mt-4", the result will be:
 
 
 (Notice how bg-red-500 got overridden by bg-blue-500).
+
+-----------------------------------------------------------------------------------------
+
+03 - BASICS OF TAILWIND 
