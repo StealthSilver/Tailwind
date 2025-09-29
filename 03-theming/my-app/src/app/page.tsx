@@ -1,5 +1,5 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <>Helloo</>;
+  return <div className="flex justify-center">Hello</div>;
 }
