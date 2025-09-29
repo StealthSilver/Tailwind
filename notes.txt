@@ -71,4 +71,8 @@ If isActive is true and className="mt-4", the result will be:
 
 -----------------------------------------------------------------------------------------
 
-03 - BASICS OF TAILWIND 
+03 - THEMING 
+
+1. install tailwind into the next js project 
+2. install the tailwind intelliscence in the extentions
+3. install the prettier automatic class sorting
