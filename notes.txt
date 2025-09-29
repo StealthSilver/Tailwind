@@ -76,3 +76,10 @@ If isActive is true and className="mt-4", the result will be:
 1. install tailwind into the next js project 
 2. install the tailwind intelliscence in the extentions
 3. install the prettier automatic class sorting
+- npm install -D prettier prettier-plugin-tailwindcss
+- then create a prettierrc.json and save the code 
+
+
+{
+    "plugins": ["prettier-plugin-tailwindcss"]
+  }
