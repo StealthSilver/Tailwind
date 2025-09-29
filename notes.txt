@@ -87,3 +87,4 @@ If isActive is true and className="mt-4", the result will be:
 why tailwind ? 
 1. rapid prototyping : can test designs fast
 2. utility based framework : created utility classes for base design
+
