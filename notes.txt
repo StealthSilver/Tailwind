@@ -97,3 +97,9 @@ tailwind color palette is great
 by deault tailwind is mobile first, so all the properties without and breakpoint will be for smaller screen
 
 crating a responsive navbar
+
+-----------------------------------------------------------------------------------------
+
+05 - DARK MODE DESIGN 
+
+npx create-next-app@latest
