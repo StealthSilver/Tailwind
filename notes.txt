@@ -103,3 +103,5 @@ crating a responsive navbar
 05 - DARK MODE DESIGN 
 
 npx create-next-app@latest
+
+npm i next-themes -> persists the theme of the user
