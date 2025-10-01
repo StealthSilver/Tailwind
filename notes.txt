@@ -105,3 +105,8 @@ crating a responsive navbar
 npx create-next-app@latest
 
 npm i next-themes -> persists the theme of the user
+
+-----------------------------------------------------------------------------------------
+
+06 - CUSTOM STYLES AND GRIDS
+
