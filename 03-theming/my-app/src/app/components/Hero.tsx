@@ -9,8 +9,9 @@ export const Hero = () => {
       </h1>
 
       <p className="mx-auto mt-10 max-w-3xl text-center text-xl text-neutral-300 selection:bg-black md:text-xl">
-        Say goodbye to outdated financial tools. Every small business owner,
-        regardless of the background, can now manage their business like a pro.
+        Say goodbye to outdated <span className="text-primary">financial</span>
+        tools. Every small business owner, regardless of the background, can now
+        manage their <span className="text-primary">business</span> like a pro.
         Simple. Intuitive. And never boring.
       </p>
 
@@ -23,7 +24,7 @@ export const Hero = () => {
         />
         {/* creating the gradient border for th button to standout */}
         <button className="relative cursor-pointer overflow-hidden rounded-xl border border-neutral-700 px-6 py-2 text-white">
-          <div className="absolute inset-x-0 bottom-0 h-[1px] w-full bg-gradient-to-r from-transparent via-sky-600 to-transparent"></div>
+          <div className="via-primary absolute inset-x-0 bottom-0 h-[1px] w-full bg-gradient-to-r from-transparent to-transparent"></div>
           Join Waitlist
         </button>
       </div>

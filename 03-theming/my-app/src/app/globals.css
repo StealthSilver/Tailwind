@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* @root{
+    --color-primary: oklch(64.5% 0.246 16.439);
+} */
+
+/* instead of defining in the root we can crate themes */
+@theme {
+  --color-primary: oklch(64.5% 0.246 16.439);
+}
