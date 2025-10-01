@@ -6,6 +6,7 @@
 } */
 
 /* instead of defining in the root we can crate themes */
+/* theming directive */
 @theme {
   --color-primary: oklch(74.6% 0.16 232.661);
   --font-display: "Titillium Web", sans-serif;
