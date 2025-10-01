@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 /* @root{
     --color-primary: oklch(64.5% 0.246 16.439);
 } */
 
 /* instead of defining in the root we can crate themes */
 @theme {
-  --color-primary: oklch(64.5% 0.246 16.439);
+  --color-primary: oklch(74.6% 0.16 232.661);
+  --font-display: "Titillium Web", sans-serif;
 }

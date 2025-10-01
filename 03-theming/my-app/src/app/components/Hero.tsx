@@ -4,12 +4,12 @@ export const Hero = () => {
   return (
     <div className="my-24 md:my-40">
       {/* gradient text for the heading */}
-      <h1 className="mx-auto max-w-3xl bg-gradient-to-b from-neutral-300 to-neutral-400 bg-clip-text text-center text-6xl leading-tight font-bold tracking-tight text-transparent md:text-7xl">
+      <h1 className="font-display mx-auto max-w-3xl bg-gradient-to-b from-neutral-300 to-neutral-400 bg-clip-text text-center text-6xl leading-tight font-bold tracking-tight text-transparent md:text-7xl">
         Unleash the power of intuitive finance
       </h1>
 
       <p className="mx-auto mt-10 max-w-3xl text-center text-xl text-neutral-300 selection:bg-black md:text-xl">
-        Say goodbye to outdated <span className="text-primary">financial</span>
+        Say goodbye to outdated <span className="text-primary">financial </span>
         tools. Every small business owner, regardless of the background, can now
         manage their <span className="text-primary">business</span> like a pro.
         Simple. Intuitive. And never boring.
