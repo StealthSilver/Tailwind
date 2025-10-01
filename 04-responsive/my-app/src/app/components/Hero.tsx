@@ -3,7 +3,7 @@ import React from "react";
 export const Hero = () => {
   // for larger screen devices use bg-blue-500
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-4 mt-20">
       <div className="text-4xl font-bold lg:bg-blue-500">Hero</div>
 
       {/* using all the breakpoints at once */}

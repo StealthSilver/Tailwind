@@ -1,8 +1,10 @@
 import { Hero } from "./components/Hero";
+import { Navbar } from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className="h-screen w-full flex items-center justify-center">
+    <div>
+      <Navbar />
       <Hero />
     </div>
   );
