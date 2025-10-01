@@ -89,3 +89,7 @@ why tailwind ?
 2. utility based framework : created utility classes for base design
 
 tailwind color palette is great
+
+-----------------------------------------------------------------------------------------
+
+04 - RESPONSIVE DESIGN 
