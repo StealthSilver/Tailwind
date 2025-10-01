@@ -1,5 +1,10 @@
 import Image from "next/image";
+import { Hero } from "./components/Hero";
 
 export default function Home() {
-  return <div className="h-screen bg-neutral-900">Hello</div>;
+  return (
+    <div className="flex h-screen justify-center bg-neutral-900">
+      <Hero />
+    </div>
+  );
 }

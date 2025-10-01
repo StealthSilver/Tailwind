@@ -88,3 +88,4 @@ why tailwind ?
 1. rapid prototyping : can test designs fast
 2. utility based framework : created utility classes for base design
 
+tailwind color palette is great
