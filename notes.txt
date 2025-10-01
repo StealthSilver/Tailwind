@@ -95,3 +95,5 @@ tailwind color palette is great
 04 - RESPONSIVE DESIGN 
 
 by deault tailwind is mobile first, so all the properties without and breakpoint will be for smaller screen
+
+crating a responsive navbar
