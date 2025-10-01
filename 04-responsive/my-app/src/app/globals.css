@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+/* we can define custom breakpoints */
+@theme {
+  --breakpoint-pogo: 700px;
+}
