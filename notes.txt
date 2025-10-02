@@ -27,6 +27,12 @@ https://www.finta.com/
 replicating the landing page of finta with tailwind
 https://www.finta.com/
 
+creating a next js application
+
+1. npx create-next-app@latest
+2. give name to the app 
+3. ts , eslint, tailwind, src, app router, no turbopack, aliasa
+
 create a lib/utils.ts and add
 
 clsx
