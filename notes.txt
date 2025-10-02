@@ -116,3 +116,4 @@ npm i next-themes -> persists the theme of the user
 
 06 - CUSTOM STYLES AND GRIDS
 
+prefers color scheme, tells from which theme the user is coming

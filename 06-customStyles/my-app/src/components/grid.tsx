@@ -4,18 +4,9 @@ import { BrainIcon, ForkIcon, MouseBoxIcon } from "./icons";
 
 const MainSkeleton = () => {
   const chat = [
-    {
-      role: "user",
-      text: "hello there",
-    },
-    {
-      role: "assistant",
-      text: "hello there! How can I help you today?",
-    },
-    {
-      role: "user",
-      text: "I want to create a new workflow",
-    },
+    { role: "user", text: "hello there" },
+    { role: "assistant", text: "hello there! How can I help you today?" },
+    { role: "user", text: "I want to create a new workflow" },
     {
       role: "assistant",
       text: "Sure, I can help you with that. What would you like to build?",
@@ -30,37 +21,40 @@ const MainSkeleton = () => {
       </div>
     );
   };
+
   const AIMessage = ({ text }: { text: string }) => {
     return (
-      <div className="flex w-fit mr-auto justify-start items-start gap-2 bg-gray-100 rounded-tr-full rounded-tl-full rounded-bl-lg rounded-br-full  p-2">
+      <div className="flex w-fit mr-auto justify-start items-start gap-2 bg-gray-100 rounded-tr-full rounded-tl-full rounded-bl-lg rounded-br-full p-2">
         <div className="rounded-full size-6 shrink-0 bg-gradient-to-r from-green-500 to-emerald-500" />
         <p className="text-sm text-black">{text}</p>
       </div>
     );
   };
+
   return (
-    <div className="h-full relative w-full px-12  flex flex-col gap-4 z-20">
+    <div className="h-full relative w-full px-12 flex flex-col gap-4 z-20">
       <input
         type="text"
         placeholder="Type your message here..."
-        className="w-[calc(100%-4rem)] h-10 bg-white border border-neutral-200 mx-auto  absolute bottom-4 inset-x-0 px-4 text-xs rounded-md placeholder-neutral-600"
+        className="w-[calc(100%-4rem)] h-10 bg-white border border-neutral-200 mx-auto absolute bottom-4 inset-x-0 px-4 text-xs rounded-md placeholder-neutral-600"
       />
-      {chat.map((message, index) => {
-        return message.role === "user" ? (
-          <UserMessage text={message.text} />
+      {chat.map((message, index) =>
+        message.role === "user" ? (
+          <UserMessage key={index} text={message.text} />
         ) : (
-          <AIMessage text={message.text} />
-        );
-      })}
+          <AIMessage key={index} text={message.text} />
+        )
+      )}
     </div>
   );
 };
 
 export const Grid = () => {
   return (
-    <div className="max-w-5xl py-20 mx-auto border-x border-neutral-200 bg-gray-100 min-h-screen ">
+    <div className="max-w-5xl py-20 mx-auto border-x border-neutral-200 bg-gray-100 min-h-screen">
       <div className="grid grid-cols-1 lg:grid-cols-2 divide-x divide-y divide-neutral-100">
-        <Card>
+        {/* Card 1 */}
+        <Card className="bg-gradient-to-br from-blue-50 to-blue-100 hover:shadow-lg transition-all duration-200">
           <CardHeader>
             <BrainIcon />
             <CardTitle>LLM Model Selector</CardTitle>
@@ -69,12 +63,13 @@ export const Grid = () => {
             Track real-time activity of agents with detailed records of
             triggers, tools used, outcomes, and timestamps.
           </CardDescription>
-          <CardSkeleton>
+          <CardSkeleton className="bg-gradient-to-r from-blue-200 to-blue-100">
             <div className="h-full w-full"></div>
           </CardSkeleton>
         </Card>
 
-        <Card>
+        {/* Card 2 */}
+        <Card className="bg-gradient-to-br from-purple-50 to-pink-100 hover:shadow-lg transition-all duration-200">
           <CardHeader>
             <MouseBoxIcon />
             <CardTitle>Text to workflow builder</CardTitle>
@@ -83,12 +78,13 @@ export const Grid = () => {
             Track real-time activity of agents with detailed records of
             triggers, tools used, outcomes, and timestamps.
           </CardDescription>
-          <CardSkeleton className="bg-white">
+          <CardSkeleton className="bg-gradient-to-r from-purple-200 to-pink-100">
             <MainSkeleton />
           </CardSkeleton>
         </Card>
 
-        <Card className="lg:col-span-2">
+        {/* Card 3 */}
+        <Card className="lg:col-span-2 bg-gradient-to-br from-green-50 to-emerald-100 hover:shadow-lg transition-all duration-200">
           <CardHeader>
             <ForkIcon />
             <CardTitle>Native tools integration</CardTitle>
@@ -96,7 +92,7 @@ export const Grid = () => {
           <CardDescription>
             Integrate with native tools to create workflows that can interact
           </CardDescription>
-          <CardSkeleton>
+          <CardSkeleton className="bg-gradient-to-r from-green-200 to-emerald-100">
             <div className="h-full w-full"></div>
           </CardSkeleton>
         </Card>
@@ -114,12 +110,11 @@ const CardSkeleton = ({
 }) => {
   return (
     <div
-      style={{}}
       className={cn(
-        "h-60 bg-gray-50 w-full my-4 rounded-lg overflow-hidden",
+        "h-60 w-full my-4 rounded-2xl overflow-hidden shadow-md",
         "bg-[radial-gradient(var(--color-neutral-100)_1px,_transparent_1px)]",
-        "[background-size:10px_10px]",
-        "mask-radial-from-40%",
+        "[background-size:12px_12px]",
+        "p-4 flex items-center justify-center",
         className
       )}
     >
@@ -135,7 +130,11 @@ const Card = ({
   className?: string;
   children: React.ReactNode;
 }) => {
-  return <div className={cn("bg-white p-4 w-full", className)}>{children}</div>;
+  return (
+    <div className={cn("bg-white p-4 w-full rounded-2xl", className)}>
+      {children}
+    </div>
+  );
 };
 
 const CardHeader = ({ children }: { children: React.ReactNode }) => {
@@ -164,6 +163,6 @@ const CardDescription = ({
   className?: string;
 }) => {
   return (
-    <p className={cn("text-base text-neutral-400", className)}>{children}</p>
+    <p className={cn("text-base text-neutral-600", className)}>{children}</p>
   );
 };
